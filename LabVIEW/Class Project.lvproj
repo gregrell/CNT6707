@@ -80,6 +80,9 @@
 				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="LV3DPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LV3DPointTypeDef.ctl"/>
 			</Item>
+			<Item Name="Create Arm.vi" Type="VI" URL="../SubVIs/Create Arm.vi"/>
+			<Item Name="Create Ball Joint.vi" Type="VI" URL="../SubVIs/Create Ball Joint.vi"/>
+			<Item Name="Set Translation and Rotation.vi" Type="VI" URL="../SubVIs/Set Translation and Rotation.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
