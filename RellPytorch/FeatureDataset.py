@@ -1,16 +1,23 @@
 import os
 import pandas as pd
+import torch
 from torchvision.io import read_image
 from torch.utils.data import Dataset
 
 class FeatureDataset(Dataset):
     def __init__(self, filename):
-        print(filename)
-        i=1
+        #read in CSV file
+        file_out = pd.read_csv(filename)
+        x = file_out.iloc[1:211742, 0:4].values
+        y = file_out.iloc[1:211742, 4].values
+
+        #convert to tensors
+        self.x_train = torch.tensor(x, dtype=torch.float32)
+        self.y_train = torch.tensor(y, dtype=torch.float32)
+
 
     def __len__(self):
-        return 0
+        return len(self.y_train)
 
     def __getitem__(self, idx):
-
-        return 0,0
+        return self.x_train[idx], self.y_train[idx]
