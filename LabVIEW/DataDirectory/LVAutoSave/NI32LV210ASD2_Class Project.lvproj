@@ -22,28 +22,29 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="Documentation Images" Type="Folder">
-				<Item Name="loc_open_data_typedef.png" Type="Document" URL="../documentation/loc_open_data_typedef.png"/>
-				<Item Name="loc_open_states_typedef.png" Type="Document" URL="../documentation/loc_open_states_typedef.png"/>
-				<Item Name="loc_simple_state_machine.png" Type="Document" URL="../documentation/loc_simple_state_machine.png"/>
-				<Item Name="loc_state_transition.png" Type="Document" URL="../documentation/loc_state_transition.png"/>
-				<Item Name="loc_transition_error.png" Type="Document" URL="../documentation/loc_transition_error.png"/>
-				<Item Name="loc_use_state_data.png" Type="Document" URL="../documentation/loc_use_state_data.png"/>
-				<Item Name="loc_conditional_state_transition.png" Type="Document" URL="../documentation/loc_conditional_state_transition.png"/>
-				<Item Name="loc_new_button.png" Type="Document" URL="../documentation/loc_new_button.png"/>
-				<Item Name="loc_new_button_transition.png" Type="Document" URL="../documentation/loc_new_button_transition.png"/>
-				<Item Name="loc_new_button_value_change.png" Type="Document" URL="../documentation/loc_new_button_value_change.png"/>
-				<Item Name="loc_new_state.png" Type="Document" URL="../documentation/loc_new_state.png"/>
+				<Item Name="loc_open_data_typedef.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_open_data_typedef.png"/>
+				<Item Name="loc_open_states_typedef.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_open_states_typedef.png"/>
+				<Item Name="loc_simple_state_machine.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_simple_state_machine.png"/>
+				<Item Name="loc_state_transition.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_state_transition.png"/>
+				<Item Name="loc_transition_error.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_transition_error.png"/>
+				<Item Name="loc_use_state_data.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_use_state_data.png"/>
+				<Item Name="loc_conditional_state_transition.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_conditional_state_transition.png"/>
+				<Item Name="loc_new_button.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_new_button.png"/>
+				<Item Name="loc_new_button_transition.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_new_button_transition.png"/>
+				<Item Name="loc_new_button_value_change.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_new_button_value_change.png"/>
+				<Item Name="loc_new_state.png" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/loc_new_state.png"/>
 			</Item>
-			<Item Name="Simple State Machine Documentation.html" Type="Document" URL="../documentation/Simple State Machine Documentation.html"/>
+			<Item Name="Simple State Machine Documentation.html" Type="Document" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/documentation/Simple State Machine Documentation.html"/>
 		</Item>
 		<Item Name="Type Definitions" Type="Folder">
-			<Item Name="Data.ctl" Type="VI" URL="../controls/Data.ctl"/>
-			<Item Name="State.ctl" Type="VI" URL="../controls/State.ctl"/>
+			<Item Name="Data.ctl" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/controls/Data.ctl"/>
+			<Item Name="State.ctl" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/controls/State.ctl"/>
 		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="3D Robot Simulator.vi" Type="VI" URL="../3D Robot Simulator.vi"/>
-		<Item Name="AutoGenerateAngles.vi" Type="VI" URL="../SubVIs/AutoGenerateAngles.vi"/>
-		<Item Name="DataLogger.vi" Type="VI" URL="../DataLogger.vi"/>
+		<Item Name="Main.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/Main.vi"/>
+		<Item Name="3D Robot Simulator.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/3D Robot Simulator.vi"/>
+		<Item Name="AutoGenerateAngles.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/AutoGenerateAngles.vi"/>
+		<Item Name="DataLogger.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/DataLogger.vi"/>
+		<Item Name="LogData.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/LogData.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -86,10 +87,16 @@
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 			</Item>
-			<Item Name="Create Arm.vi" Type="VI" URL="../SubVIs/Create Arm.vi"/>
-			<Item Name="Create Ball Joint.vi" Type="VI" URL="../SubVIs/Create Ball Joint.vi"/>
-			<Item Name="Set Translation and Rotation.vi" Type="VI" URL="../SubVIs/Set Translation and Rotation.vi"/>
+			<Item Name="Create Arm.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Create Arm.vi"/>
+			<Item Name="Create Ball Joint.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Create Ball Joint.vi"/>
+			<Item Name="Set Translation and Rotation.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Set Translation and Rotation.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
