@@ -4,7 +4,7 @@ import torch
 from torchvision.io import read_image
 from torch.utils.data import Dataset
 
-class FeatureDataset(Dataset):
+class RobotArmDataset(Dataset):
     def __init__(self, filename):
         #read in CSV file
         file_out = pd.read_csv(filename)
