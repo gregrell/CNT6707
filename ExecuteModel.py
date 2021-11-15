@@ -10,7 +10,7 @@ import torch.nn.functional as F
 
 from pathlib import Path
 
-ModelPath = 'data\modelData.dat'
+ModelPath = 'data/modelData.dat'
 
 
 class NN(nn.Module):
@@ -43,6 +43,7 @@ model = NN(input_size=input_size, num_classes=num_classes).to(device)
 # if a trained model file does not exist then train the model
 modelExists = Path(ModelPath).is_file()
 if not modelExists:
+    print(f'Model not found at {Path(ModelPath)}')
     # loss & optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
