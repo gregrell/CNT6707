@@ -1,0 +1,2 @@
+
+print("benchmark hello world")

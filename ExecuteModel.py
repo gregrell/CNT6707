@@ -10,6 +10,7 @@ from pathlib import Path
 
 ModelPath = 'data\modelData.dat'
 
+
 class NN(nn.Module):
     def __init__(self, input_size, num_classes):
         super(NN,self).__init__()
@@ -21,10 +22,6 @@ class NN(nn.Module):
         x = self.fc2(x)
         return x
 
-# This code used to check the NN model to make sure it is vaguely doing what it is supposed to do
-'''model = NN(4,2)
-x = torch.randn(64,4)
-print(model(x).shape)'''
 
 # set device
 device = torch.device('cpu')
@@ -34,30 +31,25 @@ input_size = 4
 num_classes = 2
 learning_rate = 0.001
 batch_size = 64
-num_epochs = 1
+num_epochs = 1000
 
 
-# load in custom dataset from a custom dataset object in RellPytorch module
-feature_data = RobotArmDataset('data/TrainingData.csv')
-print(f'Imported robot arm dataset with {feature_data.__len__()} data points')
-
-Train_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
-Test_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
-
-'''
-for features, label in Train_Data:
-    # print(f"features{features}")
-    print(f"label{label}")
-'''
 # initialize the network
 model = NN(input_size=input_size, num_classes=num_classes).to(device)
 
-# loss & optimizer
-criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # if a trained model file does not exist then train the model
-if not Path(ModelPath).is_file():
+modelExists = Path(ModelPath).is_file()
+if not modelExists:
+    # loss & optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+    # load in custom dataset from a custom dataset object in RellPytorch module
+    feature_data = RobotArmDataset('data/TrainingData.csv')
+    print(f'Imported robot arm dataset with {feature_data.__len__()} data points')
+    Train_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
+    Test_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
     # Train the network
     for epoch in range(num_epochs):
         for batch_idx, (data, targets) in enumerate(Train_Data):
@@ -81,10 +73,9 @@ else:
     model.load_state_dict(torch.load(ModelPath))
     print(f'Trained model data loaded from {Path(ModelPath)}')
 
+
 # Check the accuracy on training, check to see how good the model is
 def check_accuracy(loader, model):
-
-
     num_correct = 0
     num_samples = 0
     model.eval()
@@ -103,12 +94,20 @@ def check_accuracy(loader, model):
 
     model.train()
 
-check_accuracy(Train_Data, model)
 
-# Save the model
-# print(f'{Path(ModelPath).is_file()}')
+if not modelExists:
+    check_accuracy(Train_Data, model)
+
+
+
+# the following data should predict a 1 by the model
+
+
+# 56.843,70.096,42.562,176.912
+
 
 if not Path(ModelPath).is_file():
+    # Save the model
     torch.save(model.state_dict(), ModelPath)
     print(f'Model Saved at {Path(ModelPath)}')
 
