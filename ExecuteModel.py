@@ -9,8 +9,8 @@ import torch.nn.functional as F
 class NN(nn.Module):
     def __init__(self, input_size, num_classes):
         super(NN,self).__init__()
-        self.fc1 = nn.Linear(input_size, 50)
-        self.fc2 = nn.Linear(50,num_classes)
+        self.fc1 = nn.Linear(input_size, 20)
+        self.fc2 = nn.Linear(20,num_classes)
 
     def forward(self,x):
         x = F.relu(self.fc1(x))
@@ -30,7 +30,7 @@ input_size = 4
 num_classes = 2
 learning_rate = 0.001
 batch_size = 64
-num_epochs = 10
+num_epochs = 1000
 
 
 # load in custom dataset from a custom dataset object in RellPytorch module
