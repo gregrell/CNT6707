@@ -1,3 +1,5 @@
+import numpy as np
+
 from RellPytorch.FeatureDataset import RobotArmDataset
 from torch.utils.data.dataloader import DataLoader
 
@@ -105,6 +107,13 @@ if not modelExists:
 
 # 56.843,70.096,42.562,176.912
 
+testdata = torch.tensor([281.709,321.967,290.924,17.008], device=device)
+
+with torch.no_grad():
+    model.eval()
+    output = model(testdata)
+    prediction = np.argmax(output)
+    print(f'output from prediction is {prediction}')
 
 if not Path(ModelPath).is_file():
     # Save the model
