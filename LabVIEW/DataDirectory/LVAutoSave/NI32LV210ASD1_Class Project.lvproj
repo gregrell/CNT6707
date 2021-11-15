@@ -44,7 +44,6 @@
 		<Item Name="3D Robot Simulator.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/3D Robot Simulator.vi"/>
 		<Item Name="AutoGenerateAngles.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/AutoGenerateAngles.vi"/>
 		<Item Name="DataLogger.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/DataLogger.vi"/>
-		<Item Name="LogData.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/LogData.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
@@ -88,15 +87,16 @@
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
-				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
-				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
-				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
-				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
 			</Item>
 			<Item Name="Create Arm.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Create Arm.vi"/>
 			<Item Name="Create Ball Joint.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Create Ball Joint.vi"/>
 			<Item Name="Set Translation and Rotation.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/SubVIs/Set Translation and Rotation.vi"/>
+			<Item Name="LogData.vi" Type="VI" URL="/C/Users/rellg/OneDrive/git/CNT6707/LabVIEW/LogData.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
