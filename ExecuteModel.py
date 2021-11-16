@@ -1,13 +1,10 @@
 import numpy as np
-
 from RellPytorch.FeatureDataset import RobotArmDataset
 from torch.utils.data.dataloader import DataLoader
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
-
 from pathlib import Path
 
 ModelPath = 'data/modelData.dat'
@@ -37,6 +34,7 @@ num_epochs = 1000
 
 
 # initialize the network
+global model
 model = NN(input_size=input_size, num_classes=num_classes).to(device)
 
 
@@ -110,15 +108,45 @@ if not modelExists:
 
 testdata = torch.tensor([281.709,321.967,290.924,17.008], device=device)
 
-with torch.no_grad():
-    model.eval()
-    output = model(testdata)
-    prediction = np.argmax(output)
-    print(f'output from prediction is {prediction}')
 
 if not Path(ModelPath).is_file():
     # Save the model
     torch.save(model.state_dict(), ModelPath)
     print(f'Model Saved at {Path(ModelPath)}')
+else:
+    from flask import Flask, request, jsonify
+
+    app = Flask(__name__)
+
+    import logging
+
+    log = logging.getLogger('werkzeug')
+    log.setLevel(logging.ERROR)
+
+
+
+
+    @app.route("/predict", methods=['POST'])
+    def predict():
+        data = request.json                         # parse the data into json
+        features = data.get('features','')          # extract 'features' key
+        features = features.split(',')              # change the string into a list
+        features = [float(i) for i in features]     # convert each item in the list from string to float
+
+        # print(f"features received {features}")
+        predictData = torch.tensor(features, device=device)
+
+        with torch.no_grad():
+            model.eval()
+            output = model(predictData)
+            prediction = np.argmax(output)
+            # print(f'output from prediction is {prediction}')
+        return jsonify(prediction.tolist())
+
+
+    app.run()
+
+
+
 
 
