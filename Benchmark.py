@@ -1,2 +1,0 @@
-
-print("benchmark hello world")
