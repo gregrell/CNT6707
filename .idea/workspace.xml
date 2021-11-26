@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="" />
+    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/CNT6707.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CNT6707.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.aliases" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.aliases" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.lvlps" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.lvlps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.lvproj" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.lvproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabVIEW/DataDirectory/TrainingData.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RellPytorch/FeatureDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/RellPytorch/FeatureDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/TrainingData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/TrainingData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/modelData.dat" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,5 +70,16 @@
       <updated>1637111840192</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

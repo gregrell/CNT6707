@@ -8,8 +8,8 @@ class RobotArmDataset(Dataset):
     def __init__(self, filename):
         #read in CSV file
         file_out = pd.read_csv(filename)
-        x = file_out.iloc[1:211742, 0:4].values
-        y = file_out.iloc[1:211742, 4].values
+        x = file_out.iloc[1:426835, 0:4].values
+        y = file_out.iloc[1:426835, 4].values
 
         #convert to tensors
         self.x_train = torch.tensor(x, dtype=torch.float32)
