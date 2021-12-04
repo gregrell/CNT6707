@@ -14,11 +14,16 @@ class NN(nn.Module):
     def __init__(self, input_size, num_classes):
         super(NN,self).__init__()
         self.fc1 = nn.Linear(input_size, 20)
-        self.fc2 = nn.Linear(20,num_classes)
+        self.fc2 = nn.Linear(20,20)
+        self.fc3 = nn.Linear(20,20)
+        self.fc4 = nn.Linear(20,num_classes)
 
     def forward(self,x):
         x = F.relu(self.fc1(x))
-        x = self.fc2(x)
+        # x = self.fc2(x)
+        x = F.relu(self.fc2(x))
+        x = F.relu(self.fc3(x))
+        x = self.fc4(x)
         return x
 
 
@@ -47,10 +52,11 @@ if not modelExists:
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     # load in custom dataset from a custom dataset object in RellPytorch module
-    feature_data = RobotArmDataset('data/TrainingData.csv')
-    print(f'Imported robot arm dataset with {feature_data.__len__()} data points')
-    Train_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
-    Test_Data = DataLoader(feature_data, batch_size=batch_size, shuffle=True)
+    training_data = RobotArmDataset('data/TrainingData.csv')
+    testing_data = RobotArmDataset('data/TestingData.csv')
+    print(f'Imported robot arm dataset with {training_data.__len__()} data points')
+    Train_Data = DataLoader(training_data, batch_size=batch_size, shuffle=True)
+    Test_Data = DataLoader(testing_data, batch_size=batch_size, shuffle=True)
     # Train the network
     for epoch in range(num_epochs):
         for batch_idx, (data, targets) in enumerate(Train_Data):
@@ -97,7 +103,7 @@ def check_accuracy(loader, model):
 
 
 if not modelExists:
-    check_accuracy(Train_Data, model)
+    check_accuracy(Test_Data, model)
 
 
 

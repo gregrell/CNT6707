@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CNT6707.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CNT6707.iml" afterDir="false" />
+    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExecuteModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExecuteModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.aliases" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.aliases" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.lvlps" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.lvlps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabVIEW/Class Project.lvproj" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/Class Project.lvproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabVIEW/DataDirectory/TrainingData.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RellPytorch/FeatureDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/RellPytorch/FeatureDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/TrainingData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/TrainingData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Model Accuracy Log.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Model Accuracy Log.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/modelData.dat" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1637111840192</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data">
+      <created>1637896905435</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1637896905435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +84,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data" />
   </component>
 </project>
