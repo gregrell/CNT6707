@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data">
+    <list default="true" id="9f9772b5-4af3-4deb-9291-acd69419d549" name="Changes" comment="Model represents 3 layers 1000 epochs. 97% accuracy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExecuteModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExecuteModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" beforeDir="false" afterPath="$PROJECT_DIR$/LabVIEW/3D Robot Simulator.vi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Model Accuracy Log.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Model Accuracy Log.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/modelData.dat" beforeDir="false" />
     </list>
@@ -71,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637896905435</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Model represents 3 layers 1000 epochs. 97% accuracy">
+      <created>1638651239757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638651239758</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Labview append data&#10;&#10;model is 1000 epochs 400K training data" />
+    <MESSAGE value="Model represents 3 layers 1000 epochs. 97% accuracy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model represents 3 layers 1000 epochs. 97% accuracy" />
   </component>
 </project>
